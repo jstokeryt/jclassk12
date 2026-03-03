@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JclassK12 | Management</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f4f7f6; padding: 25px; }
+        .card { max-width: 500px; margin: auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin: 0 0 20px 0; }
+        .field { margin-bottom: 20px; }
+        label { display: block; font-weight: bold; margin-bottom: 8px; }
+        input, textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; }
+        button { background: #3498db; color: white; border: none; padding: 12px; border-radius: 6px; cursor: pointer; width: 100%; font-weight: bold; font-size: 16px; transition: 0.3s; }
+        button:hover { background: #2980b9; }
+        #status { margin-top: 15px; text-align: center; color: #27ae60; font-weight: bold; display: none; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Control Panel</h1>
+        <div class="field">
+            <label>Student Name</label>
+            <input type="text" id="userName">
+        </div>
+        <div class="field">
+            <label>Lock Screen Message</label>
+            <input type="text" id="lockMessage">
+        </div>
+        <div class="field">
+            <label>Blocklist (comma separated)</label>
+            <textarea id="blocklist" rows="4" placeholder="youtube.com, roblox.com"></textarea>
+        </div>
+        <button id="saveBtn">Apply All Settings</button>
+        <div id="status">Settings Synced!</div>
+    </div>
+    <script src="manage.js"></script>
+</body>
+</html>

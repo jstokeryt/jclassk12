@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        { "header": "YouTube-Restrict", "operation": "set", "value": "Strict" }
+      ]
+    },
+    "condition": {
+      "urlFilter": "||youtube.com",
+      "resourceTypes": ["main_frame", "sub_frame", "xmlhttprequest", "other"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        { "header": "SafeSearch", "operation": "set", "value": "active" }
+      ]
+    },
+    "condition": {
+      "urlFilter": "||google.com",
+      "resourceTypes": ["main_frame", "sub_frame", "xmlhttprequest", "other"]
+    }
+  }
+]

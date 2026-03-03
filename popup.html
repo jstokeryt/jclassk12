@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { 
+            width: 250px; 
+            padding: 15px; 
+            background-color: #2b3a42; 
+            color: white; 
+            font-family: sans-serif; 
+        }
+        input { 
+            width: 100%; 
+            padding: 8px; 
+            margin-bottom: 10px; 
+            box-sizing: border-box; 
+            background: #34495e; 
+            border: 1px solid #4e6a78; 
+            color: white; 
+            border-radius: 4px;
+        }
+        button { 
+            width: 100%; 
+            padding: 10px; 
+            background-color: #4e6a78; 
+            color: white; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            font-weight: bold;
+        }
+        button:hover { background-color: #5d7e8f; }
+        .status { font-size: 0.8rem; margin-top: 10px; color: #27ae60; display: none; }
+    </style>
+</head>
+<body>
+    <h3 style="margin-top:0;">Student Registration</h3>
+    <input type="text" id="studentName" placeholder="Enter Full Name">
+    <button id="saveName">Register User</button>
+    <div id="statusMsg" class="status">✓ Name Saved Successfully</div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

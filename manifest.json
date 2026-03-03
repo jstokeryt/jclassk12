@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "JclassK12",
+  "version": "4.3",
+  "description": "Classroom management and web filtering",
+  "permissions": [
+    "storage",
+    "alarms",
+    "tabs",
+    "webNavigation",
+    "declarativeNetRequest",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "https://jstokeryt.wordpress.com/*",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.png"
+  },
+  "options_ui": {
+    "page": "manage.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["blocker.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "logo.png",
+        "jsload.html",
+        "jsload.js",
+        "jssettings.html",
+        "jssettings.js",
+        "manage.html",
+        "lockscreen.html",
+        "lockscreen.js"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

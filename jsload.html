@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JCF-EXPRESS</title>
+    <style>
+        body {
+            background-color: #2b3a42;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .loader {
+            border: 5px solid #4e6a78;
+            border-top: 5px solid #ffffff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        h1 { font-size: 2.5rem; letter-spacing: 2px; margin: 0; }
+        p { opacity: 0.8; font-size: 1.1rem; margin-top: 10px; }
+        .brand { position: fixed; bottom: 20px; font-size: 0.8rem; color: #4e6a78; }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+    <h1>INITIALIZING</h1>
+    <p>JCF-EXPRESS is starting up. Please wait 15 seconds...</p>
+    <div class="brand">JclassK12 Security Suite</div>
+    
+    <script src="jsload.js"></script>
+</body>
+</html>

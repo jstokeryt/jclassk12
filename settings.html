@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site Blocked | JCF-EXPRESS</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #1a252f; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0; text-align: center; }
+        .icon { font-size: 5rem; margin-bottom: 10px; }
+        h1 { font-size: 3rem; margin: 0; color: #f39c12; }
+        p { font-size: 1.2rem; color: #bdc3c7; }
+        .footer { margin-top: 30px; font-size: 0.8rem; opacity: 0.5; }
+    </style>
+</head>
+<body>
+    <div class="icon">🚧</div>
+    <h1>WEB FILTERED</h1>
+    <p>This website is restricted by your classroom administrator.</p>
+    <p>Logged as: <span id="user-name">Student</span></p>
+    <div class="footer">JclassK12 Content Filtering System</div>
+
+    <script>
+        chrome.storage.local.get(['userName'], (data) => {
+            if (data.userName) document.getElementById('user-name').textContent = data.userName;
+        });
+    </script>
+</body>
+</html>

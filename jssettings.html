@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connection Lost | JCF-EXPRESS</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', sans-serif; background: #c0392b; 
+            color: white; display: flex; flex-direction: column; 
+            justify-content: center; align-items: center; height: 100vh; 
+            margin: 0; text-align: center; 
+        }
+        .loader {
+            border: 4px solid #f3f3f3; border-top: 4px solid #ffffff;
+            border-radius: 50%; width: 30px; height: 30px;
+            animation: spin 2s linear infinite; margin-bottom: 20px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        h1 { font-size: 3.5rem; margin: 0; }
+        p { font-size: 1.2rem; margin-top: 10px; opacity: 0.9; }
+        .footer { position: fixed; bottom: 20px; font-size: 0.8rem; opacity: 0.6; }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+    <h1>OFFLINE MODE</h1>
+    <p>Classroom connection lost. Reconnecting...</p>
+    <p>Logged in as: <b id="user-display">Student</b></p>
+    
+    <div class="footer">JclassK12 Security System</div>
+    
+    <script src="jssettings.js"></script>
+</body>
+</html>
