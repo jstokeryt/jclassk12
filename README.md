@@ -8,3 +8,6 @@
 8. It should has successfully imported.
 
 If you don't have access to developer mode, your administrator may have turned it off: https://support.google.com/chrome_webstore/answer/2811969
+
+This project is Open-Source, fork it, modify it, how you want, #opensource.
+https://opensource.org/
